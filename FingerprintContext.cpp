@@ -1,0 +1,45 @@
+#include "Angle.hpp"
+#include "FingerprintContext.hpp"
+int FingerprintContext::blockSize = 15;
+double FingerprintContext::dpiTolerance = 10;
+int FingerprintContext::histogramDepth = 256;
+double FingerprintContext::clippedContrast = 0.08;
+double FingerprintContext::minAbsoluteContrast = 17 / 255.0;
+double FingerprintContext::minRelativeContrast = 0.34;
+int FingerprintContext::relativeContrastSample = 168568;
+double FingerprintContext::relativeContrastPercentile = 0.49;
+double FingerprintContext::maxEqualizationScaling = 3.99;
+double FingerprintContext::minEqualizationScaling = 0.25;
+double FingerprintContext::minOrientationRadius = 2;
+double FingerprintContext::maxOrientationRadius = 6;
+int FingerprintContext::orientationSplit = 50;
+int FingerprintContext::orientationsChecked = 20;
+int FingerprintContext::orientationSmoothingRadius = 1;
+int FingerprintContext::innerMaskBorderDistance = 14;
+double FingerprintContext::maskDisplacement = 10.06;
+int FingerprintContext::minutiaCloudRadius = 20;
+double FingerprintContext::maxAngleError = (10 * Angle::PI) / 180;
+double FingerprintContext::maxGapAngle = (45 * Angle::PI) / 180;
+int FingerprintContext::maxCloudSize = 4;
+int FingerprintContext::maxMinutiae = 100;
+int FingerprintContext::sortByNeighbor = 5;
+int FingerprintContext::edgeTableRange = 490;
+int FingerprintContext::edgeTableNeighbors = 9;
+int FingerprintContext::thinningIterations = 26;
+int FingerprintContext::maxPoreArm = 41;
+int FingerprintContext::shortestJoinedEnding = 7;
+int FingerprintContext::maxGapSize = 20;
+int FingerprintContext::gapAngleOffset = 22;
+int FingerprintContext::maxRuptureSize = 5;
+int FingerprintContext::minFragmentLength = 22;
+int FingerprintContext::toleratedGapOverlap = 2;
+int FingerprintContext::minTailLength = 21;
+int FingerprintContext::ridgeDirectionSkip = 1;
+int FingerprintContext::ridgeDirectionSample = 21;
+VotingParameters FingerprintContext::contrastVote = VotingParameters(9, 0.86, 7);
+VotingParameters FingerprintContext::blockErrorsVote = VotingParameters(1, 0.7, 4);
+VotingParameters FingerprintContext::maskVote = VotingParameters(7, 0.51, 4);
+VotingParameters FingerprintContext::binarizedVote = VotingParameters(2, 0.61, 17);
+OrientedLineParams FingerprintContext::parallelSmoothining = OrientedLineParams(32, 7, 1.59);
+OrientedLineParams FingerprintContext::orthogonalSmoothing = OrientedLineParams(11, 4, 1.11);
+

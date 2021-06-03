@@ -1,0 +1,106 @@
+# Project: fingerprintTemplate
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o Cell.o Integers.o CellGrid.o Block.o BlockGrid.o DoubleMap.o BlockMap.o Histogram.o BooleanMap.o VotingParameters.o Point.o PointMap.o Range.o OrientedLineParams.o SkeletonRidge.o SkeletonMinutia.o FingerprintSkeleton.o Angle.o FingerprintContext.o Gap.o MinutiaType.o FingerprintMinutia.o Utils.o Random.o FingerprintTemplate.o Doubles.o
+LINKOBJ  = main.o Cell.o Integers.o CellGrid.o Block.o BlockGrid.o DoubleMap.o BlockMap.o Histogram.o BooleanMap.o VotingParameters.o Point.o PointMap.o Range.o OrientedLineParams.o SkeletonRidge.o SkeletonMinutia.o FingerprintSkeleton.o Angle.o FingerprintContext.o Gap.o MinutiaType.o FingerprintMinutia.o Utils.o Random.o FingerprintTemplate.o Doubles.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc  "C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libgdi32.a" -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = fingerprintTemplate.exe
+CXXFLAGS = $(CXXINCS) -O2 -std=c++11 -g3 -lgdi32
+CFLAGS   = $(INCS) -O2 -std=c++11 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Cell.o: Cell.cpp
+	$(CPP) -c Cell.cpp -o Cell.o $(CXXFLAGS)
+
+Integers.o: Integers.cpp
+	$(CPP) -c Integers.cpp -o Integers.o $(CXXFLAGS)
+
+CellGrid.o: CellGrid.cpp
+	$(CPP) -c CellGrid.cpp -o CellGrid.o $(CXXFLAGS)
+
+Block.o: Block.cpp
+	$(CPP) -c Block.cpp -o Block.o $(CXXFLAGS)
+
+BlockGrid.o: BlockGrid.cpp
+	$(CPP) -c BlockGrid.cpp -o BlockGrid.o $(CXXFLAGS)
+
+DoubleMap.o: DoubleMap.cpp
+	$(CPP) -c DoubleMap.cpp -o DoubleMap.o $(CXXFLAGS)
+
+BlockMap.o: BlockMap.cpp
+	$(CPP) -c BlockMap.cpp -o BlockMap.o $(CXXFLAGS)
+
+Histogram.o: Histogram.cpp
+	$(CPP) -c Histogram.cpp -o Histogram.o $(CXXFLAGS)
+
+BooleanMap.o: BooleanMap.cpp
+	$(CPP) -c BooleanMap.cpp -o BooleanMap.o $(CXXFLAGS)
+
+VotingParameters.o: VotingParameters.cpp
+	$(CPP) -c VotingParameters.cpp -o VotingParameters.o $(CXXFLAGS)
+
+Point.o: Point.cpp
+	$(CPP) -c Point.cpp -o Point.o $(CXXFLAGS)
+
+PointMap.o: PointMap.cpp
+	$(CPP) -c PointMap.cpp -o PointMap.o $(CXXFLAGS)
+
+Range.o: Range.cpp
+	$(CPP) -c Range.cpp -o Range.o $(CXXFLAGS)
+
+OrientedLineParams.o: OrientedLineParams.cpp
+	$(CPP) -c OrientedLineParams.cpp -o OrientedLineParams.o $(CXXFLAGS)
+
+SkeletonRidge.o: SkeletonRidge.cpp
+	$(CPP) -c SkeletonRidge.cpp -o SkeletonRidge.o $(CXXFLAGS)
+
+SkeletonMinutia.o: SkeletonMinutia.cpp
+	$(CPP) -c SkeletonMinutia.cpp -o SkeletonMinutia.o $(CXXFLAGS)
+
+FingerprintSkeleton.o: FingerprintSkeleton.cpp
+	$(CPP) -c FingerprintSkeleton.cpp -o FingerprintSkeleton.o $(CXXFLAGS)
+
+Angle.o: Angle.cpp
+	$(CPP) -c Angle.cpp -o Angle.o $(CXXFLAGS)
+
+FingerprintContext.o: FingerprintContext.cpp
+	$(CPP) -c FingerprintContext.cpp -o FingerprintContext.o $(CXXFLAGS)
+
+Gap.o: Gap.cpp
+	$(CPP) -c Gap.cpp -o Gap.o $(CXXFLAGS)
+
+MinutiaType.o: MinutiaType.cpp
+	$(CPP) -c MinutiaType.cpp -o MinutiaType.o $(CXXFLAGS)
+
+FingerprintMinutia.o: FingerprintMinutia.cpp
+	$(CPP) -c FingerprintMinutia.cpp -o FingerprintMinutia.o $(CXXFLAGS)
+
+Utils.o: Utils.cpp
+	$(CPP) -c Utils.cpp -o Utils.o $(CXXFLAGS)
+
+Random.o: Random.cpp
+	$(CPP) -c Random.cpp -o Random.o $(CXXFLAGS)
+
+FingerprintTemplate.o: FingerprintTemplate.cpp
+	$(CPP) -c FingerprintTemplate.cpp -o FingerprintTemplate.o $(CXXFLAGS)
+
+Doubles.o: Doubles.cpp
+	$(CPP) -c Doubles.cpp -o Doubles.o $(CXXFLAGS)
