@@ -67,6 +67,8 @@ bool Utils::equals(SkeletonMinutia* obj1, SkeletonMinutia* obj2) {
 				if (obj1->ridges.size() == obj2->ridges.size()) {
 					if (Utils::equals(obj1->ridges, obj2->ridges)) {
 						return true;
+					} else {
+						return false;
 					}
 				} else {
 					return false;

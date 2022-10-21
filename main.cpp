@@ -1,8 +1,11 @@
 #define cimg_display 0
+
 #include <iostream>
-#include <CImg.h>
+#include "CImg/CImg.h"
 #include "FingerprintTemplate.hpp"
+
 using namespace cimg_library;
+
 int main() {
 	// std::cout<<"Program started..."<<std::endl;
 	CImg<unsigned char> src("dummy.bmp");

@@ -1,0 +1,5 @@
+# Ignore visual studio code configuration folder
+.vscode
+
+# Ignore library due to change in versions
+CImg
